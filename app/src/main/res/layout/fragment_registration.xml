@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:background="@color/banner_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_vaccify_logo_blue">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/infoIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/primary"
+            tools:ignore="RelativeOverlap">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/registerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:textColor="@color/primary"
+            tools:ignore="RelativeOverlap">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="5dp"
+                android:text="@string/register"
+                android:textColor="@color/primaryBlack"
+                android:textSize="24sp"
+                android:textStyle="bold">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:padding="5dp"
+                android:text="@string/photo_id_txt"
+                android:textColor="@color/primaryBlack"
+                android:textStyle="bold">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/idTypeAutoCompleteTv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/box_stroke"
+                android:drawableEnd="@drawable/ic_drop_down_arrow"
+                android:focusable="false"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:hint="Choose Photo ID Proof"
+                android:inputType="none"
+                android:padding="5dp">
+
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cardNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/box_stroke"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:inputType="text"
+                android:padding="5dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cardHolderNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/box_stroke"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:inputType="text"
+                android:padding="5dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleRb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:text="Male">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/femaleRb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:buttonTint="@color/primary"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:text="Female">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/othersRb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:buttonTint="@color/primary"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:text="Others">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dobEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/box_stroke"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:hint="Year of Birth"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="5dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

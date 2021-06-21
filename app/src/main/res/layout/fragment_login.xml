@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:background="@color/banner_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_vaccify_logo_blue">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="220dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_banner_logo" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:padding="5dp"
+            android:text="@string/enter_mobile_number"
+            android:textColor="@color/primaryBlack"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobNoEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/box_stroke"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="5dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getOtpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_stroke"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="@string/get_otp"
+            android:textColor="@color/white">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

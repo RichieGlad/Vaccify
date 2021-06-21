@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Vaccify</string>
+    <string name="enter_mobile_number">Enter Mobile number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="login">Login</string>
+    <string name="enter_otp_received">Enter OTP Received</string>
+    <string name="change_number">Change Number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="winning_over_covid_19">Winning over COVID-19</string>
+    <string name="logout">Logout</string>
+    <string name="vaccinator_verifier"><![CDATA[Vaccinator & Verifier]]></string>
+    <string name="register_member">Register Member</string>
+    <string name="photo_id_txt">Your photo ID will be verified at the time of your vaccination. Please provide the details of the photo ID you carry on.</string>
+    <string name="register">Register</string>
+    <string name="terms_conditions"><![CDATA[By logging in you accept to the terms & conditions]]></string>
+    <string name="terms_attributions"><![CDATA[Terms & Attributions]]></string>
+    <string name="terms_attributions_text1">Vaccify is a third party Registration
+Application for Vaccination in India, that
+connects end user and the APIs provided
+by Government of India.
+    </string>
+
+    <string name="terms_attributions_text2">
+Our services connect to third party links &amp;
+APIs created by CoWIN - Government of
+India and not owned by Vaccify.
+    </string>
+
+    <string name="terms_attributions_text3">
+Vaccify has no control over, and assumes
+no responsibility for the content, privacy
+policies or any third party web sites &amp;
+services. You further acknowledge &amp; agree
+that Vaccify shall not be responsible or
+liable, directly or indirectly, for any loss
+caused or alleged to be caused by or in
+connection with the use of or reliance on
+any such content.</string>
+
+
+    <string name="terms">Terms</string>
+    <string name="attributions">Attributions</string>
+    <string name="apis_provided_txt">All APIs are Provided by</string>
+    <string name="illustration_txt"><![CDATA[All illustrations & icons belongs to]]></string>
+
+    <string name="free_pick_txt">"https://www.freepik.com/vectors/kids">Kids
+vector created by freepik - www.freepik.com</string>
+    <string name="search_by_pin">Search by PIN</string>
+    <string name="search_by_district">Search by District</string>
+    <string name="search">Search</string>
+
+    <string-array name="id_card_array">
+        <item>Aadhaar Card</item>
+        <item>Driving License</item>
+        <item>PAN Card</item>
+        <item>Passport</item>
+    </string-array>
+
+    <integer-array name="id_card_id_array">
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+        <item>8</item>
+    </integer-array>
+</resources>

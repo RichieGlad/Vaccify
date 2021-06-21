@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/status_bg"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Date"
+        android:textColor="@color/primaryOrange">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ageLimitTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/status_bg"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Age Limit"
+        android:textColor="@color/primaryOrange">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availabilityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTv"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:padding="5dp"
+        android:text="Availability Capacity"
+        android:textColor="@color/primaryBlack"
+        android:textSize="16sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availabilityDose1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availabilityTv"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:padding="5dp"
+        android:text="Availability Capacity Dose1"
+        android:textColor="@color/primaryBlack"
+        android:textSize="16sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/availabilityDose2Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availabilityDose1Tv"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:padding="5dp"
+        android:text="Availability Capacity Dose2"
+        android:textColor="@color/primaryBlack"
+        android:textSize="16sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+</RelativeLayout>

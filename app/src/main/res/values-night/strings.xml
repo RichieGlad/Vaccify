@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_otp">Get OTP</string>
+    <string name="login">Login</string>
+    <string name="enter_otp_received">Enter OTP Received</string>
+    <string name="winning_over_covid_19">Winning over COVID-19</string>
+    <string name="logout">Logout</string>
+    <string name="vaccinator_verifier"><![CDATA[Vaccinator & Verifier]]></string>
+    <string name="register_member">Register Member</string>
+    <string name="photo_id_txt">Your photo ID will be verified at the time of your vaccination. Please provide the details of the photo ID you carry on.</string>
+    <string name="register">Register</string>
+    <string name="terms_conditions"><![CDATA[By logging in you accept to the terms & conditions]]></string>
+    <string name="terms_attributions"><![CDATA[Terms & Attributions]]></string>
+    <string name="terms">Terms</string>
+    <string name="attributions">Attributions</string>
+    <string name="apis_provided_txt">All APIs are Provided by</string>
+    <string name="illustration_txt"><![CDATA[All illustrations & icons belongs to]]></string>
+    <string name="search_by_pin">Search by PIN</string>
+    <string name="search_by_district">Search by District</string>
+    <string name="search">Search</string>
+</resources>

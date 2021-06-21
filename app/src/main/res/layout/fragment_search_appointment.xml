@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_corner_bg"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backIb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_back">
+
+        </ImageButton>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:padding="5dp"
+            android:text="Book Appointment"
+            android:textColor="@color/primaryBlack"
+            android:textSize="18sp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey">
+
+    </View>
+
+    <RadioGroup
+        android:id="@+id/searchByRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/pinRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primary"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:text="@string/search_by_pin">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/districtRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:buttonTint="@color/primary"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:text="@string/search_by_district">
+
+        </RadioButton>
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchByInputEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/box_stroke"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:hint="Enter your PIN"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="5dp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <LinearLayout
+        android:id="@+id/searchByDistrictLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/stateACTv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/box_stroke"
+            android:drawableEnd="@drawable/ic_drop_down_arrow"
+            android:focusable="false"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:inputType="none"
+            android:padding="5dp">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/districtACTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_stroke"
+            android:drawableEnd="@drawable/ic_drop_down_arrow"
+            android:focusable="false"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:hint="Select District"
+            android:inputType="none"
+            android:padding="5dp">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:padding="5dp"
+        android:text="Select the Date"
+        android:textColor="@color/primaryBlack"
+        android:textSize="16sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_stroke"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/white">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>
